@@ -86,7 +86,17 @@ def build_config(
     cfg.SOLVER.STEPS = []
     cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = batch_size
     cfg.MODEL.ROI_HEADS.NUM_CLASSES = 5
+    cfg.TEST.DETECTIONS_PER_IMAGE = 100
     return cfg
+
+
+def visualize_dataset_dict(dataset_name: str, dataset_dict):
+    image_pil = open_image_pil(dataset_dict["file_name"])
+    image_cv = convert_pil_to_cv(image_pil)
+    visualizer = Visualizer(image_cv[:, :, ::-1], MetadataCatalog.get(dataset_name), scale=1.2)
+    out = visualizer.draw_dataset_dict(dataset_dict)
+    output_image_cv = out.get_image()[:, :, ::-1]
+    debug_image_cv(output_image_cv)
 
 
 def visualize_outputs(cfg, image_cv, outputs):
