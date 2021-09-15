@@ -22,11 +22,11 @@ To provide you with some options, and to experiment with different models I have
 
 ### Models from [COCO Object Detection](https://github.com/facebookresearch/detectron2/blob/main/MODEL_ZOO.md#coco-object-detection-baselines):
 
-| Name  | Train time (s/iter) | Inference time (s/im) | Folder name | Model zoo config | Trained model |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| R50-FPN  | 0.209 | 0.038 | faster_rcnn_R_50_FPN_3x | [Click me!](https://github.com/facebookresearch/detectron2/blob/main/configs/COCO-Detection/faster_rcnn_R_50_FPN_3x.yaml) | [Click me!]() |
-| R101-FPN  | 0.286 | 0.051 | faster_rcnn_R_101_FPN_3x | [Click me!](https://github.com/facebookresearch/detectron2/blob/main/configs/COCO-Detection/faster_rcnn_R_101_FPN_3x.yaml) | [Click me!]() |
-| X101-FPN  | 0.638 | 0.098 | faster_rcnn_X_101_32x8d_FPN_3x | [Click me!](https://github.com/facebookresearch/detectron2/blob/main/configs/COCO-Detection/faster_rcnn_X_101_32x8d_FPN_3x.yaml) | [Click me!]() |
+| Name  | Train time (s/iter) | Inference time (s/im) | Box AP | Folder name | Model zoo config | Trained model |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| R50-FPN  | 0.209 | 0.038 | 79.898 | faster_rcnn_R_50_FPN_3x | [Click me!](https://github.com/facebookresearch/detectron2/blob/main/configs/COCO-Detection/faster_rcnn_R_50_FPN_3x.yaml) | [Click me!]() |
+| R101-FPN  | 0.286 | 0.051 | | faster_rcnn_R_101_FPN_3x | [Click me!](https://github.com/facebookresearch/detectron2/blob/main/configs/COCO-Detection/faster_rcnn_R_101_FPN_3x.yaml) | [Click me!]() |
+| X101-FPN  | 0.638 | 0.098 | | faster_rcnn_X_101_32x8d_FPN_3x | [Click me!](https://github.com/facebookresearch/detectron2/blob/main/configs/COCO-Detection/faster_rcnn_X_101_32x8d_FPN_3x.yaml) | [Click me!]() |
 
 
 ### Models from [COCO Instance Segmentation with Mask R-CNN](https://github.com/facebookresearch/detectron2/blob/main/MODEL_ZOO.md#coco-instance-segmentation-baselines-with-mask-r-cnn):
