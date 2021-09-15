@@ -1,4 +1,22 @@
+# Dataset overview
+
+PubLayNet is a very large (over 300k images & over 90 GB in weight) dataset for document layout analysis. It contains images of research papers and articles and annotations for various elements in a page such as “text”, “list”, “figure” etc in these research paper images. The dataset was obtained by automatically matching the XML representations and the content of over 1 million PDF articles that are publicly available on PubMed Central. Originally provided by IBM [here](https://developer.ibm.com/exchanges/data/all/publaynet).
+
+| Data Description | Zipped File Name | Purpose |
+| ------------- | ------------- | ------------- |
+| Train 0 Dataset, 13 GB | [train-0.tar.gz](https://dax-cdn.cdn.appdomain.cloud/dax-publaynet/1.0.0/train-0.tar.gz) | Training | 
+| Train 1 Dataset, 13 GB | [train-1.tar.gz](https://dax-cdn.cdn.appdomain.cloud/dax-publaynet/1.0.0/train-1.tar.gz) | Training |
+| Train 2 Dataset, 13 GB | [train-2.tar.gz](https://dax-cdn.cdn.appdomain.cloud/dax-publaynet/1.0.0/train-2.tar.gz) | Training |
+| Train 3 Dataset, 13 GB | [train-3.tar.gz](https://dax-cdn.cdn.appdomain.cloud/dax-publaynet/1.0.0/train-3.tar.gz) | Training |
+| Train 4 Dataset, 13 GB | [train-4.tar.gz](https://dax-cdn.cdn.appdomain.cloud/dax-publaynet/1.0.0/train-4.tar.gz) | Training |
+| Train 5 Dataset, 13 GB | [train-5.tar.gz](https://dax-cdn.cdn.appdomain.cloud/dax-publaynet/1.0.0/train-5.tar.gz) | Training |
+| Train 6 Dataset, 13 GB | [train-6.tar.gz](https://dax-cdn.cdn.appdomain.cloud/dax-publaynet/1.0.0/train-6.tar.gz) | Training |
+| Evaluation Dataset, 3 GB | [val.tar.gz](https://dax-cdn.cdn.appdomain.cloud/dax-publaynet/1.0.0/val.tar.gz) | Evaluation |
+| Labels Dataset, 314 MB | [labels.tar.gz](https://dax-cdn.cdn.appdomain.cloud/dax-publaynet/1.0.0/labels.tar.gz) | |
+
 # Models overview
+
+Models were trained on `train` part of the dataset, consisting of 335 703 images, and evaluated on `val` part of the dataset with 11 245 images. All the AP scores were obtained on the `val` dataset.
 
 To provide you with some options, and to experiment with different models I have trained 6 versions for this dataset. 3 of them are from basic object detection, and 3 contain segmentation masks. You can choose which better suits your task by comparing accuracy scores and inference times of these models.
 
@@ -20,10 +38,9 @@ To provide you with some options, and to experiment with different models I have
 | X101-FPN  | 0.690 | 0.103 | mask_rcnn_X_101_32x8d_FPN_3x | [Click me!](https://github.com/facebookresearch/detectron2/blob/main/configs/COCO-InstanceSegmentation/mask_rcnn_X_101_32x8d_FPN_3x.yaml) | [Click me!]() |
 
 
+### Model folder
 
-# Model folder
-
-Each model's directory will contain these files:
+Each model's directory in git will contain these files:
 
 | File name  | Description |
 | ------------- | ------------- |
@@ -31,5 +48,6 @@ Each model's directory will contain these files:
 | train.py  | Training script, that trains the model found in `training_output` sub-folder for a given number of epochs |
 | test.py  | Testing script, that runs the model found in `training_output` in inference mode for 6 randomly preselected images (3 from training, 3 from evaluation datasets) and displays all predictions on each image in a pop-up window |
 | eval.py  | Testing script, that runs the model found in `training_output` in inference mode for all images found in dataset's `val` folder and `val.json`. Evaluation is performed through Detectron's `COCOEvaluator` |
+| evaluation.txt | As `eval.py` takes some time to execute (from 10 to 20 minutes) I've recorded last output of evaluation in this separate text file |
 
-Generally all models should be available through [here](https://keybase.pub/jpleorx/detectron2-publaynet/), but if not - refer to individual `download.txt` links
+Generally all trained models `.pth` files should be available through [here](https://keybase.pub/jpleorx/detectron2-publaynet/), but if not - refer to individual `download.txt` links
