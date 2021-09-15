@@ -87,6 +87,9 @@ def build_config(
     cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = batch_size
     cfg.MODEL.ROI_HEADS.NUM_CLASSES = 5
     cfg.TEST.DETECTIONS_PER_IMAGE = 100
+    #cfg.INPUT.MIN_SIZE_TRAIN = (640, 672, 704, 736, 768, 800)
+    #cfg.INPUT.MIN_SIZE_TRAIN = (600, 632, 664, 696, 728, 760)
+    cfg.INPUT.MIN_SIZE_TRAIN = (580, 612, 644, 676, 708, 740)
     return cfg
 
 
