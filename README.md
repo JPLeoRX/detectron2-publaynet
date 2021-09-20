@@ -25,7 +25,7 @@ To provide you with some options, and to experiment with different models I have
 | Name  | Train time (s/iter) | Inference time (s/im) | Box AP | Folder name | Model zoo config | Trained model |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | R50-FPN  | 0.209 | 0.038 | 81.139 | faster_rcnn_R_50_FPN_3x | [Click me!](https://github.com/facebookresearch/detectron2/blob/main/configs/COCO-Detection/faster_rcnn_R_50_FPN_3x.yaml) | [Click me!](https://keybase.pub/jpleorx/detectron2-publaynet/faster_rcnn_R_50_FPN_3x/model_final.pth) |
-| R101-FPN  | 0.286 | 0.051 | | faster_rcnn_R_101_FPN_3x | [Click me!](https://github.com/facebookresearch/detectron2/blob/main/configs/COCO-Detection/faster_rcnn_R_101_FPN_3x.yaml) | [Click me!]() |
+| R101-FPN  | 0.286 | 0.051 | 84.295 | faster_rcnn_R_101_FPN_3x | [Click me!](https://github.com/facebookresearch/detectron2/blob/main/configs/COCO-Detection/faster_rcnn_R_101_FPN_3x.yaml) | [Click me!]() |
 | X101-FPN  | 0.638 | 0.098 | | faster_rcnn_X_101_32x8d_FPN_3x | [Click me!](https://github.com/facebookresearch/detectron2/blob/main/configs/COCO-Detection/faster_rcnn_X_101_32x8d_FPN_3x.yaml) | [Click me!]() |
 
 

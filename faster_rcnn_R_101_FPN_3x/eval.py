@@ -13,7 +13,7 @@ trained_model_output_dir = '/home/leo/tekleo/detectron2-publaynet/faster_rcnn_R_
 prediction_score_threshold = 0.7
 base_lr = 0.001
 max_iter = 500
-batch_size = 1
+batch_size = 128
 
 # Detectron config
 cfg = build_config(model_zoo_config_name, dataset_train_name, dataset_test_name, trained_model_output_dir, prediction_score_threshold, base_lr, max_iter, batch_size)

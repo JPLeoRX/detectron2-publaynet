@@ -1,0 +1,33 @@
+[09/20 16:54:58 d2.evaluation.evaluator]: Total inference time: 0:19:19.760338 (0.103182 s / iter per device, on 1 devices)
+[09/20 16:54:58 d2.evaluation.evaluator]: Total inference pure compute time: 0:15:54 (0.084938 s / iter per device, on 1 devices)
+[09/20 16:54:58 d2.evaluation.coco_evaluation]: Preparing results for COCO format ...
+[09/20 16:54:58 d2.evaluation.coco_evaluation]: Evaluating predictions with unofficial COCO API...
+Loading and preparing results...
+DONE (t=0.40s)
+creating index...
+index created!
+[09/20 16:54:59 d2.evaluation.fast_eval_api]: Evaluate annotation type *bbox*
+[09/20 16:55:01 d2.evaluation.fast_eval_api]: COCOeval_opt.evaluate() finished in 2.51 seconds.
+[09/20 16:55:01 d2.evaluation.fast_eval_api]: Accumulating evaluation results...
+[09/20 16:55:02 d2.evaluation.fast_eval_api]: COCOeval_opt.accumulate() finished in 0.39 seconds.
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.843
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.940
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.912
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.251
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.602
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.894
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.503
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.871
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.880
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.270
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.650
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.927
+[09/20 16:55:02 d2.evaluation.coco_evaluation]: Evaluation results for bbox:
+|   AP   |  AP50  |  AP75  |  APs   |  APm   |  APl   |
+|:------:|:------:|:------:|:------:|:------:|:------:|
+| 84.295 | 94.048 | 91.199 | 25.061 | 60.217 | 89.431 |
+[09/20 16:55:02 d2.evaluation.coco_evaluation]: Per-category bbox AP:
+| category   | AP     | category   | AP     | category   | AP     |
+|:-----------|:-------|:-----------|:-------|:-----------|:-------|
+| text       | 89.249 | title      | 76.824 | list       | 77.612 |
+| table      | 92.250 | figure     | 85.539 |            |        |
