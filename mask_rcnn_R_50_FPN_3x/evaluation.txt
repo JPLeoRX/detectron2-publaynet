@@ -1,0 +1,62 @@
+[09/21 23:09:59 d2.evaluation.evaluator]: Total inference time: 0:16:24.224200 (0.087564 s / iter per device, on 1 devices)
+[09/21 23:09:59 d2.evaluation.evaluator]: Total inference pure compute time: 0:11:49 (0.063095 s / iter per device, on 1 devices)
+[09/21 23:09:59 d2.evaluation.coco_evaluation]: Preparing results for COCO format ...
+[09/21 23:09:59 d2.evaluation.coco_evaluation]: Evaluating predictions with unofficial COCO API...
+Loading and preparing results...
+DONE (t=0.07s)
+creating index...
+index created!
+[09/21 23:09:59 d2.evaluation.fast_eval_api]: Evaluate annotation type *bbox*
+[09/21 23:10:01 d2.evaluation.fast_eval_api]: COCOeval_opt.evaluate() finished in 2.56 seconds.
+[09/21 23:10:01 d2.evaluation.fast_eval_api]: Accumulating evaluation results...
+[09/21 23:10:02 d2.evaluation.fast_eval_api]: COCOeval_opt.accumulate() finished in 0.40 seconds.
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.837
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.946
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.915
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.241
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.575
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.881
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.499
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.866
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.874
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.260
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.618
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.915
+[09/21 23:10:02 d2.evaluation.coco_evaluation]: Evaluation results for bbox:
+|   AP   |  AP50  |  AP75  |  APs   |  APm   |  APl   |
+|:------:|:------:|:------:|:------:|:------:|:------:|
+| 83.666 | 94.573 | 91.473 | 24.061 | 57.487 | 88.116 |
+[09/21 23:10:02 d2.evaluation.coco_evaluation]: Per-category bbox AP:
+| category   | AP     | category   | AP     | category   | AP     |
+|:-----------|:-------|:-----------|:-------|:-----------|:-------|
+| text       | 87.715 | title      | 78.127 | list       | 76.065 |
+| table      | 90.497 | figure     | 85.927 |            |        |
+Loading and preparing results...
+DONE (t=1.40s)
+creating index...
+index created!
+[09/21 23:10:05 d2.evaluation.fast_eval_api]: Evaluate annotation type *segm*
+[09/21 23:10:13 d2.evaluation.fast_eval_api]: COCOeval_opt.evaluate() finished in 8.12 seconds.
+[09/21 23:10:13 d2.evaluation.fast_eval_api]: Accumulating evaluation results...
+[09/21 23:10:13 d2.evaluation.fast_eval_api]: COCOeval_opt.accumulate() finished in 0.39 seconds.
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.823
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.948
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.905
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.233
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.576
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.863
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.493
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.855
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.863
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.258
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.626
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.898
+[09/21 23:10:14 d2.evaluation.coco_evaluation]: Evaluation results for segm:
+|   AP   |  AP50  |  AP75  |  APs   |  APm   |  APl   |
+|:------:|:------:|:------:|:------:|:------:|:------:|
+| 82.268 | 94.780 | 90.453 | 23.343 | 57.613 | 86.311 |
+[09/21 23:10:14 d2.evaluation.coco_evaluation]: Per-category segm AP:
+| category   | AP     | category   | AP     | category   | AP     |
+|:-----------|:-------|:-----------|:-------|:-----------|:-------|
+| text       | 87.076 | title      | 75.841 | list       | 66.976 |
+| table      | 92.767 | figure     | 88.677 |            |        |
