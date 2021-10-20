@@ -51,3 +51,7 @@ Each model's directory in git will contain these files:
 | evaluation.txt | As `eval.py` takes some time to execute (from 10 to 20 minutes) I've recorded last output of evaluation in this separate text file |
 
 Generally all trained models `.pth` files should be available through [here](https://keybase.pub/jpleorx/detectron2-publaynet/), but if not - refer to individual `download.txt` links
+
+# Using the models
+
+In `usage_example` module I've provided a sample script `example.py` that builds Detectron objects (config and predictor) for my trained model and runs inference on it, with a sample interpretation of Detectron's outputs. Please note that `test.py` and `eval.py` in model folders use common functions shared between models in this project. While `example.py` provides a completely clean setup, assuming you only want to download the models and use them for inference directly. It requires only Pillow, OpenCV, numpy and Detectron2 to run. 
