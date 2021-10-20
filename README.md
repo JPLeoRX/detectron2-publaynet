@@ -24,18 +24,18 @@ To provide you with some options, and to experiment with different models I have
 
 ### Models from [COCO Object Detection](https://github.com/facebookresearch/detectron2/blob/main/MODEL_ZOO.md#coco-object-detection-baselines):
 
-| Name  | Train time (s/iter) | Inference time (s/im) | Box AP | Folder name | Model zoo config | Trained model |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| R50-FPN  | 0.209 | 0.038 | 81.139 | faster_rcnn_R_50_FPN_3x | [Click me!](https://github.com/facebookresearch/detectron2/blob/main/configs/COCO-Detection/faster_rcnn_R_50_FPN_3x.yaml) | [Click me!](https://keybase.pub/jpleorx/detectron2-publaynet/faster_rcnn_R_50_FPN_3x) |
-| R101-FPN  | 0.286 | 0.051 | 84.295 | faster_rcnn_R_101_FPN_3x | [Click me!](https://github.com/facebookresearch/detectron2/blob/main/configs/COCO-Detection/faster_rcnn_R_101_FPN_3x.yaml) | [Click me!](https://keybase.pub/jpleorx/detectron2-publaynet/faster_rcnn_R_101_FPN_3x) |
+| Name  | Inference time (s/im) | Box AP | Folder name | Model zoo config | Trained model |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| R50-FPN  | 0.038 | 81.139 | faster_rcnn_R_50_FPN_3x | [Click me!](https://github.com/facebookresearch/detectron2/blob/main/configs/COCO-Detection/faster_rcnn_R_50_FPN_3x.yaml) | [Click me!](https://keybase.pub/jpleorx/detectron2-publaynet/faster_rcnn_R_50_FPN_3x) |
+| R101-FPN  | 0.051 | 84.295 | faster_rcnn_R_101_FPN_3x | [Click me!](https://github.com/facebookresearch/detectron2/blob/main/configs/COCO-Detection/faster_rcnn_R_101_FPN_3x.yaml) | [Click me!](https://keybase.pub/jpleorx/detectron2-publaynet/faster_rcnn_R_101_FPN_3x) |
 
 
 ### Models from [COCO Instance Segmentation with Mask R-CNN](https://github.com/facebookresearch/detectron2/blob/main/MODEL_ZOO.md#coco-instance-segmentation-baselines-with-mask-r-cnn):
 
-| Name  | Train time (s/iter) | Inference time (s/im) | Box AP | Mask AP | Folder name | Model zoo config | Trained model |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| R50-FPN  | 0.261 | 0.043 | 83.666 | 82.268 | mask_rcnn_R_50_FPN_3x |[Click me!](https://github.com/facebookresearch/detectron2/blob/main/configs/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml) | [Click me!](https://keybase.pub/jpleorx/detectron2-publaynet/mask_rcnn_R_50_FPN_3x) |
-| R101-FPN  | 0.340 | 0.056 | 86.690 | 82.105 | mask_rcnn_R_101_FPN_3x | [Click me!](https://github.com/facebookresearch/detectron2/blob/main/configs/COCO-InstanceSegmentation/mask_rcnn_R_101_FPN_3x.yaml) | [Click me!](https://keybase.pub/jpleorx/detectron2-publaynet/mask_rcnn_R_101_FPN_3x) |
+| Name  | Inference time (s/im) | Box AP | Mask AP | Folder name | Model zoo config | Trained model |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| R50-FPN  | 0.043 | 83.666 | 82.268 | mask_rcnn_R_50_FPN_3x |[Click me!](https://github.com/facebookresearch/detectron2/blob/main/configs/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml) | [Click me!](https://keybase.pub/jpleorx/detectron2-publaynet/mask_rcnn_R_50_FPN_3x) |
+| R101-FPN  | 0.056 | 86.690 | 82.105 | mask_rcnn_R_101_FPN_3x | [Click me!](https://github.com/facebookresearch/detectron2/blob/main/configs/COCO-InstanceSegmentation/mask_rcnn_R_101_FPN_3x.yaml) | [Click me!](https://keybase.pub/jpleorx/detectron2-publaynet/mask_rcnn_R_101_FPN_3x) |
 
 
 ### Model folder
