@@ -58,4 +58,14 @@ In `usage_example` module I've provided a sample script `example.py` that builds
 
 # Hardware used
 
-Believe it or not but training of these models was performed on a regular consumer-grade personal gaming PC with one NVIDIA 2070 SUPER (8GB) GPU, Intel Core i5-10600K CPU and 32 GB RAM. 
+Believe it or not but training of these models was performed on a regular consumer-grade personal gaming PC with one NVIDIA 2070 SUPER (8GB) GPU, Intel Core i5-10600K CPU and 32 GB RAM.
+
+# Links
+
+In case you’d like to check my other work or contact me:
+* [Personal website](https://tekleo.net/)
+* [GitHub](https://github.com/jpleorx)
+* [PyPI](https://pypi.org/user/JPLeoRX/)
+* [DockerHub](https://hub.docker.com/u/jpleorx)
+* [Articles on Medium](https://medium.com/@leo.ertuna)
+* [LinkedIn (feel free to connect)](https://www.linkedin.com/in/leo-ertuna-14b539187/) 
