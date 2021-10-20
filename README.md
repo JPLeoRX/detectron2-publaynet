@@ -1,5 +1,7 @@
 Here I present [Detectron2](https://github.com/facebookresearch/detectron2) object detection models trained on [PubLayNet](https://developer.ibm.com/exchanges/data/all/publaynet/) dataset, ranging from 81.139 to 86.690 in validation AP scores (possibly even better results can be achieved with longer training times).
 
+![Preview](https://github.com/JPLeoRX/detectron2-publaynet/blob/master/prediction_example/preview.png?raw=True)
+
 # Dataset overview
 
 PubLayNet is a very large (over 300k images & over 90 GB in weight) dataset for document layout analysis. It contains images of research papers and articles and annotations for various elements in a page such as “text”, “list”, “figure” etc in these research paper images. The dataset was obtained by automatically matching the XML representations and the content of over 1 million PDF articles that are publicly available on PubMed Central. Originally provided by IBM [here](https://developer.ibm.com/exchanges/data/all/publaynet).
