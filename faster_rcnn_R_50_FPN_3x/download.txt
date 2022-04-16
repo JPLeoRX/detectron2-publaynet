@@ -1,1 +1,2 @@
 https://keybase.pub/jpleorx/detectron2-publaynet/faster_rcnn_R_50_FPN_3x/
+https://drive.google.com/file/d/1olLQOXvt6nYbvW4pES3T_ABqSlWRq9mY/view?usp=sharing

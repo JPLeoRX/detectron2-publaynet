@@ -1,1 +1,2 @@
 https://keybase.pub/jpleorx/detectron2-publaynet/mask_rcnn_R_50_FPN_3x/
+https://drive.google.com/file/d/1IbxaRd82hIrxPT4a1U61_g2vvE3zcRLO/view?usp=sharing

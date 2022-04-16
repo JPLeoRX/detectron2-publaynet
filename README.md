@@ -52,7 +52,7 @@ Each model's directory in git will contain these files:
 | eval.py  | Testing script, that runs the model found in `training_output` in inference mode for all images found in dataset's `val` folder and `val.json`. Evaluation is performed through Detectron's `COCOEvaluator` |
 | evaluation.txt | As `eval.py` takes some time to execute (from 10 to 20 minutes) I've recorded last output of evaluation in this separate text file |
 
-Generally all trained models `.pth` files should be available through [here](https://keybase.pub/jpleorx/detectron2-publaynet/), but if not - refer to individual `download.txt` links
+Generally all trained models `.pth` files should be available through [here](https://keybase.pub/jpleorx/detectron2-publaynet/) or [here](https://drive.google.com/drive/folders/11BeTAb8BlS9DiEb_ndoAh1fKyq16i6FC?usp=sharing), but if not - refer to individual `download.txt` links
 
 # Using the models
 
