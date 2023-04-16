@@ -1,3 +1,8 @@
+# Warning!!!
+This repository is no longer maintained, as it was moved to another GitHub. Please see [CaseDrive](https://github.com/CaseDrive/publaynet-models) GitHub profile for any updates related to this research. 
+
+---
+
 Here I present [Detectron2](https://github.com/facebookresearch/detectron2) object detection models trained on [PubLayNet](https://developer.ibm.com/exchanges/data/all/publaynet/) dataset, ranging from 81.139 to 86.690 in validation AP scores (possibly even better results can be achieved with longer training times).
 
 ![Preview](https://github.com/JPLeoRX/detectron2-publaynet/blob/master/prediction_example/preview.png?raw=True)
